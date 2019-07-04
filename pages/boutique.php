@@ -44,7 +44,8 @@ require '../core/init.php';
                     <td><?= $book->getCost()?>€</td>
                     <td>
                         <a href="info_book.php?book_id=<?= $book->getBookId()?>" class="btn btn-primary">Description</a>
-                        <a href="cart_content.php?book_id=<?= $book->getBookId()?>&action=add" class="btn btn-success">Acheter</a>
+                        <!-- <a href="cart_content.php?book_id=<?= $book->getBookId()?>&action=add" class="btn btn-success">Acheter</a> -->
+                        <a id="<?= $book->getBookId()?>" href="cart_content.php?book_id=<?= $book->getBookId()?>&action=add" class="btn btn-success">Acheter</a>
                     </td>
                 </tr>
 
@@ -55,9 +56,6 @@ require '../core/init.php';
             </tbody>
         </table>
     </div>
-
-
-
 
 <?php
 require '../template/footer.php';

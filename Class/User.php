@@ -87,6 +87,7 @@ class User
        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
        if(sha1($password) === $user["password"]) {
+           var_dump('yoo');
            $res = new User($user["id"],$user["pseudo"],$user["gender"],$user["email"],$user["password"],$user["inscription_date"]);
            $_SESSION["auth"] = true;
            $_SESSION["user_id"] = $res->getUserId();

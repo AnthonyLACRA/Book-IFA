@@ -1,4 +1,6 @@
 <?php
+require '../core/init.php';
+$user = User::getUserInfoByID($_SESSION["user_id"]);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -13,14 +15,14 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = "SSL0.OVH.NET";
 $mail->SMTPAuth = true;
-$mail->Username = "anthony.lacrabere@stagiairesifa.fr";
+$mail->Username = $user["email"];
 $mail->Password = "19880214*";
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;
 
 // info du mail
-$mail->setFrom("anthony.lacrabere@stagiairesifa.fr", "John Doe");
-$mail->addAddress("anthony.lacrabere@stagiairesifa.fr");
+$mail->setFrom($user["email"], "Book'IFA");
+$mail->addAddress("anthony.lacra@outlook.fr");
 
 $mail->isHTML(true);
 $mail->Subject = $_POST["subject"];

@@ -84,7 +84,7 @@ if($cart->countCartContent() > 0) {
                     <td><?= $book->getCost()?>€</td>
                     <td class="row justify-content-center">
                         <span class="btn btn-success ml-2">
-                            <a href="?book_id=<?= $book->getBookId()?>&user_id=<?= $value["user_id"]?>&action=plus"><i class="fas fa-plus text-white"></i></a>
+                            <a  href="?book_id=<?= $book->getBookId()?>&user_id=<?= $value["user_id"]?>&action=plus"><i id="<?= $book->getBookId()?>" class="fas fa-plus text-white"></i></a>
                         </span>
                         <span class="btn btn-dark ml-2">
                             <?= $value["quantity"] ?>

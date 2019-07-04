@@ -9,7 +9,7 @@ require '../core/init.php';
 
     <div class="container">
         <div class="row justify-content-center">
-            <p class="col-lg-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto aspernatur autem cumque, delectus error illo illum inventore libero magni minima nam natus nulla placeat quis rerum saepe sed, veritatis.</p>
+            <p class="col-lg-8">Bonjourtem cumque, delectus error illo illum inventore libero magni minima nam natus nulla placeat quis rerum saepe sed, veritatis.</p>
         </div>
         <div class="row">
 

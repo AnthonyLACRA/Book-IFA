@@ -1,5 +1,7 @@
 <?php
 require '../core/init.php';
+$user = User::getUserInfoByID($_SESSION["user_id"]);
+var_dump($user["email"])
 ?>
 
 
