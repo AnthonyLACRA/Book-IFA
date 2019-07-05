@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bca982d-06af-440c-bed1-02772821204d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cart_content.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/edit_profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit_profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/jsonCart.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jsonCart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,11 +54,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/myOrder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            <state relative-caret-position="137">
+              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/library.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7514">
+              <caret line="289" selection-start-line="289" selection-end-line="289" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="208">
+                <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,6 +139,8 @@
         <option value="$PROJECT_DIR$/pages/order.php" />
         <option value="$PROJECT_DIR$/template/header.php" />
         <option value="$PROJECT_DIR$/pages/myOrder.php" />
+        <option value="$PROJECT_DIR$/db/library.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -149,26 +161,6 @@
             <path>
               <item name="projet-librairie" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-librairie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-librairie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-project" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-librairie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-project" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-librairie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-project" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,12 +232,12 @@
       <workItem from="1556719445853" duration="1773000" />
       <workItem from="1562149103832" duration="1190000" />
       <workItem from="1562224327267" duration="1877000" />
-      <workItem from="1562307804407" duration="12957000" />
+      <workItem from="1562307804407" duration="13499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96175000" />
+    <option name="totallyTimeSpent" value="96717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -510,8 +502,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/myOrder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        <state relative-caret-position="137">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/library.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7514">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="208">
+            <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
