@@ -42,14 +42,15 @@ require "../Class/Cart.php";
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon compte</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="../pages/account.php">Profil</a>
-                                        <a class="dropdown-item" href="#">Mes commandes</a>
+                                        <a class="dropdown-item" href="../pages/myOrder.php">Mes commandes</a>
                                         <a class="dropdown-item" href="../pages/deconnexion.php">Déconnexion</a>
                                     </div>
                                 </li>
                             <?php
                             } else {
                             ?>
-                        <a class="nav-link" href="connexion.php" role="button">Se connecter</a>
+                        <a class="nav-link" href="connexion.php" role="button">Connexion</a>
+                        <a class="nav-link" href="inscription.php" role="button">S'inscrire</a>
 
                         <?php
                             }

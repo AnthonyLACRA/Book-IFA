@@ -2,8 +2,10 @@
 require '../core/init.php';
 
 if(isset($_POST["submit"])) {
-    User::userInscription($_POST["pseudo"], $_POST["email"], $_POST["password"]);
-    header("location:connexion.php");
+    if(!empty($_POST["pseudo"]) && !empty($_POST["email"]) && !empty($_POST["password"]) ) {
+        User::userInscription($_POST["pseudo"], $_POST["email"], $_POST["password"]);
+        header("location:connexion.php");
+    }
 }
 
 ?>
@@ -50,6 +52,7 @@ if(isset($_POST["submit"])) {
                     </div>
                     <input name="password" class="form-control" placeholder="Mot de passe" type="password">
                 </div> <!-- form-group// -->
+
 
                 <div class="form-group">
                     <button name="submit" type="submit" class="btn btn-primary btn-block"> Création du compte  </button>

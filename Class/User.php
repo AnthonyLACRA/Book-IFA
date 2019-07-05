@@ -74,10 +74,24 @@ class User
         return $user;
     }
 
+    public static function getUserAddress($user_id) {
+        $stmt = Database::getInstance()->prepare("SELECT * FROM adress_infos WHERE user_id = ?");
+        $stmt->execute([$user_id]);
+        $address = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $address;
+    }
+
+    public static function addUserAddress($user_id, $num, $street, $zip, $town) {
+        $stmt = Database::getInstance()->prepare("INSERT INTO adress_infos (user_id, num, street, zip, town) VALUES (?, ?, ?, ?, ?)");
+        $stmt->execute([$user_id, $num, $street, $zip, $town]);
+        return;
+    }
+
     public static function userInscription($pseudo, $email, $password) {
         $stmt = Database::getInstance()->prepare("INSERT INTO users (pseudo, email, password) VALUES (?, ?, ?);");
         $stmt->execute([$pseudo, $email, sha1($password)]);
-        return null;
+
+        return;
     }
 
 
@@ -95,20 +109,5 @@ class User
        }
        return null;
     }
-
-    public static function getUserAdressByID($user_id) {
-        $stmt = Database::getInstance()->prepare("
-SELECT name FROM adress
-INNER JOIN adress_infos
-ON adress_infos.adress_id = adress.id
-INNER JOIN users
-ON users.id = adress_infos.user_id
-WHERE users.id = ?");
-        $stmt->execute([$user_id]);
-        $adress = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        var_dump($adress);
-        return $adress;
-    }
-
 
 }

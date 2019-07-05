@@ -42,11 +42,11 @@ if(isset($_GET["book_id"]) && $_GET["action"] == "add"){
 
 if($cart->countCartContent() > 0) {
 ?>
-    <div class="row mb-3 justify-content-end">
-        <div class="col-lg-3">
-            <a class="btn btn-success" href="order.php">Passer commande</a>
-        </div>
+<div class="container">
+    <div class="row justify-content-end">
+        <a class="btn btn-success col-lg-2 mr-4 mb-3" href="order.php">Passer commande</a>
     </div>
+</div>
 <div class="container">
         <table class="table table-hover">
             <thead>

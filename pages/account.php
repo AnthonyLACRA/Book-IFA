@@ -1,7 +1,7 @@
 <?php
 require '../core/init.php';
 $user = User::getUserInfoByID($_SESSION["user_id"]);
-
+$address = User::getUserAddress($_SESSION["user_id"])
 ?>
     <section class="jumbotron text-center">
         <div class="container">
@@ -22,14 +22,7 @@ $user = User::getUserInfoByID($_SESSION["user_id"]);
     </div>
     <div class="container p-2">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="row ml-5">
-                    <div class="col-lg-12 ml-5">
-                        <img src="https://via.placeholder.com/300">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="row p-5">
                     <div class="col-lg-12">
                         <div class="row">
@@ -44,7 +37,7 @@ $user = User::getUserInfoByID($_SESSION["user_id"]);
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <p>Adresse e-mail : <?= $user["email"]?></p>
+                                <p>Mail : <?= $user["email"]?></p>
                             </div>
                         </div>
                         <div class="row">
@@ -53,8 +46,10 @@ $user = User::getUserInfoByID($_SESSION["user_id"]);
                             </div>
                         </div>
                         <div class="row">
-                            <h1><i class="fas fa-user-edit p-3"></i></h1>
-                            <a href="edit_profil.php"><p class="p-4">Modifier mon compte</p></a>
+                            <div class="col-lg-12">
+                                <p>Adresse de livraison : <?php if(User::getUserAddress($_SESSION["user_id"])) { echo $address["num"] ." ". $address["street"] . " " . $address["zip"] . ", " . $address["town"]; } else { ?>
+                                        <a href="edit_profil.php">ajouter une adresse</a><?php }?></p>
+                            </div>
                         </div>
                     </div>
 

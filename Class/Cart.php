@@ -37,6 +37,12 @@ class Cart
         header("location:boutique.php");
     }
 
+    public static function getCartContent() {
+        $file = file_get_contents("jsonCart.json");
+        $cart_content = json_decode($file, true);
+        return $cart_content;
+    }
+
     public static function countCartContent() {
         $file = file_get_contents("jsonCart.json");
         $cart_content = json_decode($file, true);

@@ -1,7 +1,6 @@
 <?php
 require '../core/init.php';
 $user = User::getUserInfoByID($_SESSION["user_id"]);
-var_dump($user["email"])
 ?>
 
 
@@ -51,7 +50,7 @@ var_dump($user["email"])
                         <p>4 Rue Saint-Charles</p>
                         <p>57000 Metz</p>
                         <p>France</p>
-                        <p>Email : anthony.lacrabere&stagiairesifa.fr</p>
+                        <p>Email : anthony.lacrabere@stagiairesifa.fr</p>
                         <p>Tel. +33 12 56 11 51 84</p>
                     </div>
                 </div>

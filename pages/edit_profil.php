@@ -1,7 +1,10 @@
 <?php
 require '../core/init.php';
-$user = User::getUserInfoByID($_SESSION["user_id"]);
-
+if(isset($_POST["submit"])) {
+    if(!empty( $_POST["num"]) && !empty($_POST["street"]) && !empty($_POST["zip"]) && !empty($_POST["town"])) {
+        User::addUserAddress($_SESSION["user_id"], $_POST["num"], $_POST["street"], $_POST["zip"], $_POST["town"]);
+    }
+}
 ?>
 <section class="jumbotron text-center">
     <div class="container">
@@ -27,26 +30,22 @@ $user = User::getUserInfoByID($_SESSION["user_id"]);
             <form method="post">
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"><i class="fas fa-location-arrow"></i> </span>
                     </div>
-                    <input name="pseudo" class="form-control" placeholder="<?= $user["pseudo"]?>" type="text">
-                </div> <!-- form-group// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                    </div>
-                    <input name="email" class="form-control" placeholder="<?= $user["email"]?>" type="email">
+                    <input name="num" class="form-control" placeholder="N°" type="text">
+                    <input name="street" class="form-control" placeholder="Rue" type="text">
                 </div> <!-- form-group// -->
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fas fa-camera"></i> </span>
+                        <span class="input-group-text"> <i class="fas fa-location-arrow"></i></span>
                     </div>
-                    <input name="password" class="form-control" placeholder="url de votre photo" type="text">
+                    <input name="zip" class="form-control" placeholder="Code postal" type="text">
+                    <input name="town" class="form-control" placeholder="Ville" type="text">
                 </div> <!-- form-group// -->
 
                 <div class="form-group">
-                    <button name="submit" type="submit" class="btn btn-primary btn-block"> Modifier  </button>
+                    <button name="submit" type="submit" class="btn btn-primary btn-block"> Ajouterx  </button>
                 </div> <!-- form-group// -->
             </form>
         </article>
